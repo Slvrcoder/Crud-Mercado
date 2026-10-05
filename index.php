@@ -1,7 +1,7 @@
 <?php
 require_once "infra/conexao.php";
 
-$sql = "SELECT * FROM mercado";
+$sql = "SELECT * FROM produtos";
 $resultado = mysqli_query($conexao, $sql);
 
 if (!$resultado) {
@@ -23,7 +23,7 @@ if (!$resultado) {
             <h2>Adicione uma nova mercadoria!</h2>
             <form action="public/produtos-cadastrar.php" method="POST">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome produto">
+                <input type="text" name="nome-produto">
                 <br>
                 <label for="descricao">Descrição:</label>
                 <input type="text" name="descricao">
